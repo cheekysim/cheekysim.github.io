@@ -11,6 +11,9 @@ body {
 canvas {
     background: #232323;
     position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
     z-index: -1;
 }
 
@@ -18,15 +21,15 @@ canvas {
     background-size: cover;
     background-position: center center;
     color: white;
-    padding-bottom: 4vw;
+    padding-bottom: 5vw;
     padding-top: 0vw;
     text-align: center;
     font-size: 400%;
-    border-bottom: 5px solid #5b5b5b;
 }
 
 .header-container .site-header {
-    padding: 20px 0;
+    padding: 5em;
+    text-align: center;
     margin: 0 auto;
     max-width: 1200px;
     text-transform: uppercase;
@@ -35,7 +38,6 @@ canvas {
 .main-nav {
     font-size: 25px;
     font-weight: 200;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .main-nav ul {

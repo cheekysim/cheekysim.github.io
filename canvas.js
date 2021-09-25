@@ -1,8 +1,8 @@
 var canvas = document.getElementById('canvas'),
     ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = 985;
+canvas.width = canvas.width * 5;
+canvas.height = canvas.height * 5;
 var stars = [],
     FPS = 60,
     x = 150,
@@ -91,5 +91,3 @@ function tick() {
 }
 
 tick();
-
-document.body.style.background = 'url(' + c.toDataURL() + ')';
