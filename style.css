@@ -4,12 +4,12 @@ body {
     font-weight: 0;
     margin: 0;
     line-height: 1.25;
-    background-color: #2b2b2b;
+    background-color: #191924;
     overflow: overlay;
 }
 
 canvas {
-    background: #232323;
+    background: #191924;
     position: absolute;
     display: flex;
     height: 100vh;
@@ -59,6 +59,11 @@ canvas {
     transform: scale(1.05);
 }
 
+.projects_title a {
+    color: white;
+    text-decoration: none;
+}
+
 .row {
     display: flex;
     justify-content: center;
@@ -92,14 +97,14 @@ canvas {
 
 .container h1,
 p {
-    color: #bbbbbb;
+    color: white;
 }
 
 .footer {
     text-align: center;
     color: #5b5b5b;
     text-transform: uppercase;
-    border-top: 5px solid #5b5b5b;
+    border-top: 5px solid #1f1f4c;
 }
 
 ::-webkit-scrollbar {
@@ -111,12 +116,12 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #9b9b9b;
+    background: #1f1f56;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #bbbbbb;
+    background: #3030EA;
     border-radius: 5px;
 }
 
