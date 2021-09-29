@@ -108,7 +108,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 5px
+    width: 0.5vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -117,12 +117,12 @@ p {
 
 ::-webkit-scrollbar-thumb {
     background: #1f1f56;
-    border-radius: 5px;
+    border-radius: 0.25vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #3030EA;
-    border-radius: 5px;
+    border-radius: 0.25vw;
 }
 
 ::-webkit-scrollbar-corner {
