@@ -12,8 +12,8 @@ canvas {
     background: #232323;
     position: absolute;
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     z-index: -1;
 }
 
@@ -28,31 +28,17 @@ canvas {
 }
 
 .site-header {
-    padding: 5em 5vmin;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
     text-align: center;
     margin: 0 auto;
     max-width: 1200px;
     text-transform: uppercase;
 }
 
-.main-nav {
-    font-size: 25px;
-    font-weight: 200;
-}
-
-.main-nav ul {
-    margin: 0;
-}
-
-.main-nav ul li {
-    display: inline-block;
-}
-
-.main-nav ul li a {
-    padding: 20px 50px;
-    text-decoration: none;
-    display: inline-block;
-    color: white;
+.site-header h1 {
+    margin: auto auto;
 }
 
 .row {
