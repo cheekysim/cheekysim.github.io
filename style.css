@@ -27,8 +27,8 @@ canvas {
     font-size: 400%;
 }
 
-.header-container .site-header {
-    padding: 5em;
+.site-header {
+    padding: 5em 5vmin;
     text-align: center;
     margin: 0 auto;
     max-width: 1200px;
@@ -55,30 +55,39 @@ canvas {
     color: white;
 }
 
-.main-column {
-    float: left;
-    width: 33.3%;
-    height: 500px;
-    padding: 0 10px;
-    background-color: #5b5b5b;
-}
-
 .row {
-    margin: 0 0px;
+    display: flex;
+    justify-content: center;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.main-card {
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    height: 450px;
-    text-align: center;
-    background-color: #999999;
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 0 10vmin 5vw;
+}
+
+.card img {
+    max-width: 500px;
+    max-height: auto;
+}
+
+.card a:link {
+    color: transparent;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05)
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.container h1,
+p {
+    color: #bbbbbb;
 }
 
 .footer {
