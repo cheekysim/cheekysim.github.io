@@ -170,12 +170,21 @@ p {
 }
 
 .discord {
+    background-image: url("images/discord_background.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto 50px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    width: 60%;
+    height: fit-content;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .discord iframe {
-    padding-bottom: 50px;
+    transform: scale(0.9);
+    padding: 25px 25px 25px 10px;
 }
 
 .footer {
