@@ -50,6 +50,8 @@ btt:focus {
 .btt img {
     transform: scale(0.75);
     padding: 0 0 25px;
+    max-width: 100%;
+    max-height: auto;
 }
 
 .btnEntrance {
