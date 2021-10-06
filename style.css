@@ -167,6 +167,15 @@ p {
     color: white;
 }
 
+.discord {
+    display: flex;
+    justify-content: center;
+}
+
+.discord iframe {
+    padding-bottom: 50px;
+}
+
 .footer {
     text-align: center;
     color: #5b5b5b;
