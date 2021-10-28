@@ -1,6 +1,7 @@
 :root {
     --primary: #3030EA;
     --secondary: #1f1f56;
+    --text-seocondary: #2E2098;
     --background: #191924;
 }
 
@@ -95,7 +96,7 @@ btt:focus {
     background-position: center center;
     color: var(--primary);
     text-align: center;
-    font-size: 400%;
+    font-size: 4em;
 }
 
 .site-header {
@@ -131,8 +132,33 @@ btt:focus {
     color: var(--primary);
 }
 
+.fancy-underline {
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+}
+
+.fancy-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    /**/
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 .page-description {
-    color: var(--secondary);
+    color: var(--text-seocondary);
 }
 
 .projects_title {
@@ -186,16 +212,16 @@ btt:focus {
     transform: scale(1.05)
 }
 
-.container {
+.card-container {
     padding: 2px 16px;
 }
 
-.container h1 {
+.card-container h1 {
     color: var(--primary);
 }
 
-.container p {
-    color: var(--secondary);
+.card-container p {
+    color: var(--text-seocondary);
     font-size: 200%;
 }
 
@@ -216,8 +242,42 @@ btt:focus {
     flex: 1 1 32%;
 }
 
-.discord_sidebar {
+.discord-sidebar {
     flex: 1 1 68%;
+}
+
+.about-container {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 60vw;
+    height: fit-content;
+}
+
+.about {
+    background-color: var(--background);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about img {
+    padding: 20px;
+    max-width: 500px;
+    max-height: auto;
+    border-radius: 50%;
+    outline: 10px solid var(--secondary);
+    outline-offset: -20px;
+}
+
+.about h1 {
+    font-size: 600%;
+    color: var(--primary);
+}
+
+.about-me {
+    font-size: 300%;
+    color: var(--text-seocondary);
 }
 
 footer {
